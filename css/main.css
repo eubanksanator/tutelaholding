@@ -1,0 +1,99 @@
+@import url(normalize.css);
+
+
+
+
+#biz{margin-top: 200px;}
+.biz-box p{background-color: yellow; display: none;}
+.biz-grouping{padding-left: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+  background: url(../images/chicago1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{background-color: transparent;}
+
+/****************
+    JUMBOTRON
+*****************/
+.jumbotron{
+  max-height: 100%;
+  max-width: 100%;
+  height: 175px;
+  position: relative;
+  top: 250px;
+  z-index: 1;
+}
+
+/****************
+    NAVBAR
+*****************/
+.navi{
+  background-color:;
+  border:none;
+  border-radius: 0;
+}
+.navi a{
+  font-size: 16px;
+}
+/*.img-brand{
+  width: 32px;
+  height: 25px;
+}*/
+.brand-title{
+  font-size: 30px;
+  color:black;
+}
+
+/****************
+  COMPANY_LIST
+*****************/
+#biz-section{
+  position: relative;
+  top: 100px;
+  z-index: 10;
+}
+.no-show{
+  display: none;
+  background-color: rgba(222, 230, 255, 0.6);
+}
+.biz-box{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.company-title-row{
+  background-color: rgba(255,255,255, 0.6);
+  width: 60%;
+  /*position: absolute;
+  top: 150px;*/
+}
+.company-content-row{
+  width: 60%;
+  position: absolute;
+  top: 220px;
+  background-color: yellow;
+}
+.company-title-row a{
+ /* padding-left: 30px;
+  padding-right: 50px;*/
+  /*float: left;*/
+  font-size: 18px;
+}
+.company-title-row p{
+  z-index: 10;
+}
