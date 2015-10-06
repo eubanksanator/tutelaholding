@@ -1,6 +1,8 @@
 $(document).ready(function(){
-  $('.biz-box').hover(
-    function() { $('.no-sho', $(this)).show(); },
-    function() { $('.no-sho', $(this)).hide(); }
+  $('.biz-hover').hide();
+
+  $('.biz-list li').hover(
+    function() { $('.biz-hover', $(this)).show(); },
+    function() { $('.biz-hover', $(this)).hide(); }
     );
 });

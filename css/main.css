@@ -1,19 +1,78 @@
 @import url(normalize.css);
 
+.biz-row{
+  transform: translate(-15px);
+  max-width: auto;
+  width: 70%;
+}
+.biz-title{
+  border-right: 1px solid black
+}
+
+.biz-list li{
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.biz-list > li{
+  float: left;
+  padding-left: 50px;
+  background-color: rgba(255,255,255, 0.6);
+}
+.biz-row ul ul{
+  background-color: white;
+  cursor: default;
+  display: none;
+  height: auto;
+  margin-left: -11px;
+  padding-top: 24px;
+  position: absolute;
+  top: -24px;
+  width: 200px;
+  border-top:10px solid #B91D24;
+}
+
+.biz-title-2{
+  font-size: 18px;
+  transform: translateY(-12px);
+}
+
+/**************************************************************************************/
 
 
 
-#biz{margin-top: 200px;}
-.biz-box p{background-color: yellow; display: none;}
-.biz-grouping{padding-left: 0;}
+#biz{
+  transform: translateY(110px);
+}
+
+.biz-box h2{
+  /*border-right: 2px solid black;*/
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.biz-box p{
+  background-color: transparent; display: none;
+  /*border: 2px solid black;*/
+  border-top: none;
+  padding: 10px;
+}
+.no-sho{
+  padding-top: 31px;
+  margin-top: -10px;
+}
+.biz-grouping{padding-left: 0; position: relative; z-index: 10;}
+
+.jumbotron{
+  width: 420px;
+  position: fixed;
+}
 
 
 
-
-
-
-
-
+.hovering-title{
+  background-color: red;
+  border:2px solid black;
+}
 
 
 
@@ -43,34 +102,53 @@ body{background-color: transparent;}
 /****************
     NAVBAR
 *****************/
+
+.brand-title{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  color:white;
+  padding-left: 15px;
+}
 .navi{
-  background-color:;
+  padding-top: 20px;
+  background-color:transparent;
   border:none;
-  border-radius: 0;
+
 }
 .navi a{
   font-size: 16px;
 }
-/*.img-brand{
-  width: 32px;
-  height: 25px;
-}*/
-.brand-title{
-  font-size: 30px;
-  color:black;
+.navbar-default .navbar-nav > li > a{
+  color:white;
+}
+.navbar-default .navbar-nav > li  a:hover{
+  color: white;
+}
+.dropdown-menu{
+  background-color:white;
+  color: black;
+  border-top:3px solid #B91D24;
+  box-shadow: 0;
+  border-radius: 0;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+  color: red;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
+  color: white;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > li ul li a:hover{
+  color: red;
 }
 
 /****************
   COMPANY_LIST
 *****************/
-#biz-section{
-  position: relative;
-  top: 100px;
-  z-index: 10;
-}
+
 .no-show{
   display: none;
-  background-color: rgba(222, 230, 255, 0.6);
 }
 .biz-box{
   background-color: rgba(255, 255, 255, 0.6);
@@ -79,8 +157,6 @@ body{background-color: transparent;}
 .company-title-row{
   background-color: rgba(255,255,255, 0.6);
   width: 60%;
-  /*position: absolute;
-  top: 150px;*/
 }
 .company-content-row{
   width: 60%;
@@ -96,4 +172,7 @@ body{background-color: transparent;}
 }
 .company-title-row p{
   z-index: 10;
+}
+.navbar-default .navbar-nav > li ul li a:hover{
+  color: red;
 }
